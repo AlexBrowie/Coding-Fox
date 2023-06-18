@@ -1,0 +1,370 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+  <title>Coding-Fox</title>
+  <style>
+    #navbar {
+      height: 7vh;
+    }
+
+    #first-slider{
+      color: black;
+    }
+    .card{
+      display: inline-block;
+    }
+    .card-line{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-top: 2vh;
+    }
+    #para-1{
+      width: 60%;
+       height: auto;
+       display: flex;
+       align-items: center;
+       justify-content: center;
+       margin: auto;
+       font-family: Lato;
+    }
+    #para-2{
+      width: 60%;
+       height: auto;
+       display: flex;
+       align-items: center;
+       justify-content: center;
+       margin: auto;
+       font-family: Lato;
+    }
+    @media (max-width:992px) {
+      #navbar{
+        height: 9vh;
+      }
+    }
+  </style>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Lato:ital@1&family=Libre+Baskerville&display=swap');
+  </style>
+</head>
+
+<body>
+  <!-- https://source.unsplash.com/1200x400/?programming -->
+
+  <!-- navbar here -->
+  <nav id="navbar" class="navbar navbar-expand-lg navbar-light bg-info">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#"><img src="Microsoft-Fluentui-Emoji-Flat-Fox-Flat.512.png" alt="" margin="0"
+          padding="0" width="55" height="55"><b>Coding-Fox</b></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="about.html">About</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+              aria-expanded="false">
+              More!
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item" href="signup.html">Sign-up</a></li>
+              <li><a class="dropdown-item" href="signin.html">Sign-in</a></li>
+              <li><a class="dropdown-item" href="https://chat.openai.com/">Solve coding errors!</a></li>
+              <li>
+                <hr class="dropdown-divider">
+              </li>
+              <li><a class="dropdown-item" href="https://api.whatsapp.com/send?phone=9267910517">Contact-us</a></li>
+            </ul>
+          </li>
+        </ul>
+        <form class="d-flex">
+          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-warning" type="submit">Search</button>
+        </form>
+      </div>
+    </div>
+  </nav>
+  <div class="alert alert-success alert-dismissible fade show" role="alert">
+    <strong>Welcome!</strong> To our website, here you can find solution of your any programming and coding related problems, Thanks for visiting our website.
+    <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+  </div>
+
+  <!-- courousel here -->
+
+  <div>
+    <div id="carouselExampleCaptions" class="carousel slide">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="3.jpeg" class="d-block w-100" alt="...">
+          <div class="carousel-caption d-none d-md-block">
+            <h5>Productive</h5>
+            <p>What are you waiting for? Join-us now and make your life productive!</p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="2.jpeg" class="d-block w-100" alt="...">
+          <div class="carousel-caption d-none d-md-block">
+            <h5>Error</h5>
+            <p>Any type of coding, programming or Maths error, just come here to get answer</p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="1.jpeg" class="d-block w-100" alt="...">
+          <div class="carousel-caption d-none d-md-block">
+            <h5>Coding-Fox</h5>
+            <p style="color: black;">In this website you get the solutions of any problem</p>
+          </div>
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+  </div>
+  <div id="para-1" class="para">
+    <p>Introduction:
+      Coding and programming have become integral parts of our modern world. They have transformed the way we communicate, work, and interact with technology. In this essay, we will explore the importance of coding and programming, their impact on various aspects of our lives, and how they can empower us to shape the future.
+      
+      The Essence of Coding:
+      Coding is the process of creating instructions that computers can understand and execute. It involves writing algorithms and commands using programming languages. The beauty of coding lies in its ability to transform abstract ideas into concrete solutions. It empowers individuals to bring their imaginations to life, solve complex problems, and build innovative applications.
+      
+      The Significance of Programming:
+      Programming, on the other hand, encompasses the broader discipline of designing, developing, and maintaining software systems. It involves combining coding skills with problem-solving abilities to create functional and efficient programs. Programming forms the backbone of various technological advancements, ranging from mobile apps and websites to artificial intelligence and robotics.
+      
+      Importance in the Digital Age:
+      In today's digital age, coding and programming have become essential skills for individuals and society as a whole. Here's why they are important:
+      
+      Fostering Creativity and Logical Thinking:
+      Coding encourages creative thinking and logical reasoning. It nurtures the ability to break down complex problems into smaller, manageable tasks and devise logical solutions. It empowers individuals to think critically, analyze situations, and approach challenges with innovative perspectives.
+      
+      </p>
+  </div>
+  <!-- card here -->
+  <div>
+    <div class="card-line">
+      <div class="card" style="width: 18rem;">
+        <img src="c-1.jpeg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Ad- World-tour</h5>
+          <p class="card-text">Go for the world tour for just Rs. 5-Lakhs</p>
+          <a href="#" class="btn btn-primary">Go Now</a>
+        </div>
+      </div>
+      <div class="card" style="width: 18rem;">
+        <img src="c-2.jpeg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Ad- Visit Dubai</h5>
+          <p class="card-text">Get Delhi to Dubai ticket at low cost of 40% off!</p>
+          <a href="#" class="btn btn-primary">Buy Tickets</a>
+        </div>
+      </div>
+    </div>
+    <div class="card-line">
+      <div class="card" style="width: 18rem;">
+        <img src="c-3.jpeg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Ad- Learn-Python</h5>
+          <p class="card-text">Learn Python for free with Certificate</p>
+          <a href="#" class="btn btn-primary">Enroll now</a>
+        </div>
+      </div>
+      <div class="card" style="width: 18rem;">
+        <img src="c-4.jpeg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Ad- Learn AI&ML</h5>
+          <p class="card-text">Learn AI and ML with python form IIT proffessors for just Rs. 30k</p>
+          <a href="#" class="btn btn-primary">Enroll now</a>
+        </div>
+      </div>
+    </div>
+  </div>
+<div id="para-2" class="para">
+<p>
+  Driving Technological Innovation:
+  Coding and programming drive technological innovation and progress. They enable the development of new software, tools, and applications that enhance our lives and transform industries. From healthcare and finance to entertainment and transportation, technology powered by programming has revolutionized every sector.
+  
+  Enhancing Problem-Solving Skills:
+  Coding cultivates problem-solving skills that are valuable beyond the realm of technology. It trains individuals to approach problems systematically, think analytically, and develop step-by-step solutions. These skills are transferable to various domains, empowering individuals to tackle challenges in their personal and professional lives.
+  
+  Empowering Entrepreneurship:
+  Coding and programming provide the foundation for entrepreneurship. They enable individuals to transform their ideas into viable products or services. With coding skills, entrepreneurs can build prototypes, develop minimal viable products (MVPs), and bring their startups to life. It reduces dependence on external technical expertise and allows for greater control over the development process.
+  
+  Opening Career Opportunities:
+  Proficiency in coding and programming unlocks a wide range of career opportunities. The demand for skilled programmers continues to grow across industries. From software development and web design to data analysis and cybersecurity, there are diverse paths to explore. Furthermore, coding skills enhance employability even in non-technical fields as technology continues to influence all industries.
+  
+  Conclusion:
+  Coding and programming have become indispensable in our technology-driven world. They empower individuals to create, innovate, and solve complex problems. By nurturing creativity, logical thinking, and problem-solving skills, coding equips us to face the challenges of the future. Moreover, it opens doors to diverse career opportunities and enables technological advancements that shape our society. Embracing coding and programming is not just about learning a language; it is about embracing a mindset of continuous learning, adaptability, and endless possibilities.
+  So You can learn coding from our website with us!
+</p>
+</div>
+  <!-- section here -->
+  <section>
+    <div class="container px-4 py-5" id="icon-grid">
+      <h2 class="pb-2 border-bottom"><img src="Microsoft-Fluentui-Emoji-Flat-Fox-Flat.512.png" alt="" margin="0"
+        padding="0" width="55" height="55">Services</h2>
+
+      <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 g-4 py-5">
+        <div class="col d-flex align-items-start">
+          <svg class="bi text-body-secondary flex-shrink-0 me-3" width="1.75em" height="1.75em">
+            <use xlink:href="#bootstrap"></use>
+          </svg>
+          <div>
+            <h3 class="fw-bold mb-0 fs-4 text-body-emphasis">Help-24x7</h3>
+            <p>We are available 24x7 for your help</p>
+          </div>
+        </div>
+        <div class="col d-flex align-items-start">
+          <svg class="bi text-body-secondary flex-shrink-0 me-3" width="1.75em" height="1.75em">
+            <use xlink:href="#cpu-fill"></use>
+          </svg>
+          <div>
+            <h3 class="fw-bold mb-0 fs-4 text-body-emphasis">Programming</h3>
+            <p>You can learn many programming langauge form us Lke python, ruby, c, cpp, java etc.</p>
+          </div>
+        </div>
+        <div class="col d-flex align-items-start">
+          <svg class="bi text-body-secondary flex-shrink-0 me-3" width="1.75em" height="1.75em">
+            <use xlink:href="#calendar3"></use>
+          </svg>
+          <div>
+            <h3 class="fw-bold mb-0 fs-4 text-body-emphasis">Join-us</h3>
+            <p>We are hiring employees you can Contact-us for jobs</p>
+          </div>
+        </div>
+        <div class="col d-flex align-items-start">
+          <svg class="bi text-body-secondary flex-shrink-0 me-3" width="1.75em" height="1.75em">
+            <use xlink:href="#home"></use>
+          </svg>
+          <div>
+            <h3 class="fw-bold mb-0 fs-4 text-body-emphasis">Errors</h3>
+            <p>You can any time visit our website when you get an error in programming, Maths etc.</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+<div id="line">
+  <hr>
+</div>
+  <!-- Web functions -->
+  <div>
+    <div class="row row-cols-1 row-cols-sm-2 row-cols-lg-3 gy-4 gy-sm-5 pb-md-4 pb-lg-5 mb-2 mb-lg-0 mb-xxl-2">
+      <!-- Item-->
+      <div class="col text-center text-sm-start pt-2 pt-sm-0">
+        <div class="pe-md-3 ps-lg-3 ps-xl-5"><img class="d-inline-block mb-3 mb-lg-4" src="11.png" width="56" alt="Gulp">
+          <h3 class="h5 mb-2">Kick-start your development</h3>
+          <p class="mb-0">Start your development process fast and easy with Node.js and Gulp setup. Configuration files are included in the download package. Full tasks automation and local server hot reload.</p>
+        </div>
+      </div>
+      <!-- Item-->
+      <div class="col text-center text-sm-start pt-2 pt-sm-0">
+        <div class="ps-md-3 pe-lg-3 pe-xl-5"><img class="d-inline-block mb-3 mb-lg-4" src="22.png" width="56" alt="Pug">
+          <h3 class="h5 mb-2">Pug - Node templating engine</h3>
+          <p class="mb-0">No need to write huge amount of HTML if you don't want to. Pug provides features not available in plain HTML like variables, includes, mixins, functions, etc.</p>
+        </div>
+      </div>
+      <!-- Item-->
+      <div class="col text-center text-sm-start pt-2 pt-sm-0">
+        <div class="pe-md-3 px-lg-2 px-xl-4"><img class="d-inline-block mb-3 mb-lg-4" src="33.png" width="56" alt="JavaScript">
+          <h3 class="h5 mb-2">Future-proof JavaScript</h3>
+          <p class="mb-0">Around core scripts as well as all dependencies are written in vanilla JS. And now with Bootstrap 5 we finally don't need jQuery any more and we can use ES6 modules to structure the code.</p>
+        </div>
+      </div>
+      <!-- Item-->
+      <div class="col text-center text-sm-start pt-2 pt-sm-0">
+        <div class="ps-md-3 ps-lg-3 ps-xl-5"><img class="d-inline-block mb-3 mb-lg-4" src="44.png" width="56" alt="HTML5">
+          <h3 class="h5 mb-2">W3C valid HTML code</h3>
+          <p class="mb-0">All HTML files are checked with W3C validator to ensure 100% valid code. As you probably know invalid HTML limits innovation, but Around is innovative at its core.</p>
+        </div>
+      </div>
+      <!-- Item-->
+      <div class="col text-center text-sm-start pt-2 pt-sm-0">
+        <div class="pe-md-3 pe-lg-3 pe-xl-5"><img class="d-inline-block mb-3 mb-lg-4" src="55.png" width="56" alt="Touch support">
+          <h3 class="h5 mb-2">Touch-enabled sliders</h3>
+          <p class="mb-0">In the era of touch screens it's important to ensure great user experience on handheld devices, when it comes to such frequently used interface component as slider.</p>
+        </div>
+      </div>
+      <!-- Item-->
+      <div class="col text-center text-sm-start pt-2 pt-sm-0">
+        <div class="ps-md-3 px-lg-2 px-xl-4"><img class="d-inline-block mb-3 mb-lg-4" src="66.png" width="56" alt="Google Fonts">
+          <h3 class="h5 mb-2">Google fonts</h3>
+          <p class="mb-0">Around uses Google font (Inter) which is free, fast to load and of very high quality. Currently Google fonts library includes 1400+ font families to choose from.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+<!-- Bootstrap element -->
+  <div class="bg-dark position-relative rounded-5 overflow-hidden px-4 pt-1 pb-2 py-sm-4 py-lg-5">
+    <div class="d-none d-dark-mode-block position-absolute top-0 start-0 w-100 h-100" style="background-color: rgba(255,255,255, .02);"></div>
+    <div class="position-absolute top-0 end-0 pe-5 zindex-2">
+      <svg class="me-5" width="514" height="254" viewBox="0 0 514 254" fill="white" fill-opacity=".03" xmlns="http://www.w3.org/2000/svg">
+        <ellipse cx="257" cy="0.5" rx="257" ry="253.5"></ellipse>
+      </svg>
+    </div>
+    <div class="d-none d-lg-flex position-absolute start-0 bottom-0 ms-n4">
+      <div data-aos="fade-left" data-aos-duration="700" data-aos-anchor-placement="bottom-bottom" class="aos-init">  
+        <svg class="text-primary" width="117" height="117" viewBox="0 0 117 117" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+          <circle cx="58.5" cy="58.5" r="58.5"></circle>
+        </svg>
+      </div>
+      <div data-aos="fade-right" data-aos-duration="700" data-aos-anchor-placement="bottom-bottom" class="aos-init">
+        <svg class="text-warning" width="117" height="117" viewBox="0 0 117 117" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+          <path d="M-2.51516e-06 58.5C-3.52666e-06 70.0702 3.43096 81.3806 9.85902 91.0008C16.2871 100.621 25.4235 108.119 36.113 112.547C46.8025 116.975 58.5649 118.133 69.9128 115.876C81.2607 113.619 91.6844 108.047 99.8657 99.8657C108.047 91.6844 113.619 81.2607 115.876 69.9128C118.133 58.5649 116.975 46.8025 112.547 36.113C108.119 25.4235 100.621 16.2871 91.0009 9.85903C81.3806 3.43096 70.0702 -4.24071e-06 58.5 -5.11423e-06L58.5 58.5L-2.51516e-06 58.5Z"></path>
+        </svg>
+      </div>
+    </div>
+    <div class="dark-mode position-relative zindex-3 text-center py-5 my-xl-3 mx-auto" style="max-width: 565px;">
+      <h2 class="display-5">Subscribe to Newsletter</h2>
+      <p class="fs-lg pb-3 mb-3 mb-lg-4">Subscribe to our newsletter to receive early discount offers, new templates info and updates.</p>
+      <form class="subscription-form validate mx-auto" action="https://studio.us12.list-manage.com/subscribe/post?u=c7103e2c981361a6639545bd5&amp;amp;id=29ca296126" method="post" name="mc-embedded-subscribe-form" target="_blank" novalidate="" style="max-width: 500px;">
+        <div class="input-group"><span class="input-group-text"><i class="ai-mail"></i></span>
+          <input class="form-control" type="email" name="EMAIL" placeholder="Enter your email" required="" id="subscr-email">
+          <button class="btn btn-primary" type="submit" name="subscribe">Subscribe*</button>
+        </div>
+        <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+        <div style="position: absolute; left: -5000px;" aria-hidden="true">
+          <input class="subscription-form-antispam" type="text" name="b_c7103e2c981361a6639545bd5_29ca296126" tabindex="-1">
+        </div>
+        <div class="subscription-status mx-auto"></div>
+      </form>
+    </div>
+  </div>
+  <footer>
+    <div class="container text-center py-3"><span class="text-muted">© All rights reserved. Made with <span class="text-danger">❤</span> by </span><a class="nav-link d-inline fw-normal p-0" href="https://createx.studio/" target="_blank" rel="noopener">Alex-Browie</a></div>
+  </footer>
+  <!-- Option 1: Bootstrap Bundle with Popper -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+
+
+</body>
+
+</html>
