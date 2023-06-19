@@ -13,7 +13,7 @@
   <title>Coding-Fox</title>
   <style>
     #navbar {
-      height: 7vh;
+      height: auto;
     }
 
     #first-slider{
@@ -28,6 +28,7 @@
       justify-content: center;
       margin-top: 2vh;
     }
+    
     #para-1{
       width: 60%;
        height: auto;
@@ -35,7 +36,6 @@
        align-items: center;
        justify-content: center;
        margin: auto;
-       font-family: Lato;
     }
     #para-2{
       width: 60%;
@@ -44,11 +44,26 @@
        align-items: center;
        justify-content: center;
        margin: auto;
-       font-family: Lato;
     }
-    @media (max-width:992px) {
+    @media (min-width:992px) {
       #navbar{
         height: 9vh;
+        
+      }
+    }
+    @media (max-width:450px) {
+      #para-1{
+        width: 95%;
+      }
+      #para-2{
+        width: 95%;
+      }
+    }
+    @media (max-width:420px) {
+      .sliding{
+        width: 200px;
+        height: 75px;
+        margin: auto
       }
     }
   </style>
@@ -59,7 +74,7 @@
 
 <body>
   <!-- https://source.unsplash.com/1200x400/?programming -->
-
+  
   <!-- navbar here -->
   <nav id="navbar" class="navbar navbar-expand-lg navbar-light bg-info">
     <div class="container-fluid">
@@ -105,7 +120,7 @@
     <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
   </div>
 
-  <!-- courousel here -->
+  <!-- carousel here -->
 
   <div>
     <div id="carouselExampleCaptions" class="carousel slide">
@@ -116,24 +131,36 @@
       </div>
       <div class="carousel-inner">
         <div class="carousel-item active">
-          <img src="3.jpeg" class="d-block w-100" alt="...">
-          <div class="carousel-caption d-none d-md-block">
-            <h5>Productive</h5>
+          <div id="img1">
+            <img src="3.jpeg" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-caption">
+            <div class="sliding">
+              <h5>Productive</h5>
             <p>What are you waiting for? Join-us now and make your life productive!</p>
+            </div>
           </div>
         </div>
         <div class="carousel-item">
-          <img src="2.jpeg" class="d-block w-100" alt="...">
-          <div class="carousel-caption d-none d-md-block">
-            <h5>Error</h5>
+          <div id="img2">
+            <img src="2.jpeg" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-caption">
+            <div class="sliding">
+              <h5>Error</h5>
             <p>Any type of coding, programming or Maths error, just come here to get answer</p>
+            </div>
           </div>
         </div>
         <div class="carousel-item">
-          <img src="1.jpeg" class="d-block w-100" alt="...">
-          <div class="carousel-caption d-none d-md-block">
+          <div id="img3">
+            <img src="1.jpeg" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-caption">
+           <div class="sliding">
             <h5>Coding-Fox</h5>
-            <p style="color: black;">In this website you get the solutions of any problem</p>
+            <p" style="color: aqua;">In this website you get the solutions of any problem</p>
+           </div>
           </div>
         </div>
       </div>
